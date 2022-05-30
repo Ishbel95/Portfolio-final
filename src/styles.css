@@ -1,25 +1,44 @@
 :root {
   --primary-color: #fff;
-  --text-shadow: 5px 5px 5px #fff;
+  --secondary-color: #38b4fa;
+  --text-shadow: 1px 1px 1px rgb(255, 255, 255);
   --primary-font: "Londrina Shadow", cursive;
   --secondary-font: "Lexend Mega", sans-serif;
+  --background-color: #212529;
 }
 
 body {
-  background-color: rgb(53, 52, 52);
+  background-color: var(--background-color);
   color: var(--primary-color);
 }
 
 h1 {
   font-family: var(--primary-font);
   text-align: center;
-  margin-top: 40px;
+  margin-top: 250px;
   font-size: 100px;
-  color: var(--primary-color);
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   text-shadow: var(--text-shadow);
 }
 
 h2 {
-  font-family: var(--secondary-font);
   text-align: center;
+}
+h2,
+.navigation {
+  font-family: var(--secondary-font);
+  font-weight: 200;
+}
+
+.icon-container {
+  justify-content: center;
+}
+.footer-icon {
+  color: var(--primary-color);
+  font-size: 30px;
+  padding: 50px;
 }
