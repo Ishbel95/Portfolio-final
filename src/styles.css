@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(53, 52, 52);
+}
+
+h1 {
+  font-family: "Londrina Shadow", cursive;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 100px;
+  color: white;
+  text-shadow: 5px 5px 5px #fff;
+}
