@@ -1,12 +1,25 @@
+:root {
+  --primary-color: #fff;
+  --text-shadow: 5px 5px 5px #fff;
+  --primary-font: "Londrina Shadow", cursive;
+  --secondary-font: "Lexend Mega", sans-serif;
+}
+
 body {
   background-color: rgb(53, 52, 52);
+  color: var(--primary-color);
 }
 
 h1 {
-  font-family: "Londrina Shadow", cursive;
+  font-family: var(--primary-font);
   text-align: center;
   margin-top: 40px;
   font-size: 100px;
-  color: white;
-  text-shadow: 5px 5px 5px #fff;
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  text-align: center;
 }
