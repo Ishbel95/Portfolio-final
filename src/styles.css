@@ -174,7 +174,10 @@ h2,
 .horizontal-line-container hr {
   opacity: 1;
   color: var(--primary-color);
-  width: 10em;
-
+  width: 25em;
   justify-content: center;
+}
+.horizontal-line-container .horizontal-line-top {
+  position: absolute;
+  top: 200px;
 }
