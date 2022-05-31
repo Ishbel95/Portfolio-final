@@ -17,8 +17,6 @@ h1 {
   color: var(--primary-color);
   text-shadow: var(--text-shadow);
   font-family: var(--primary-font);
-  text-align: center;
-  margin-top: 2.5em;
   font-size: 6em;
   letter-spacing: 0.2em;
 }
@@ -28,6 +26,10 @@ h2 {
   padding: 30px;
   text-align: center;
   text-shadow: var(--secondary-text-shadow);
+}
+.home-heading {
+  text-align: center;
+  margin-top: 2.5em;
 }
 h2,
 .navigation {
@@ -145,4 +147,34 @@ h2,
   .home-image {
     height: 60vh;
   }
+}
+
+.top-left-heading {
+  position: relative;
+  top: 70px;
+  left: 50px;
+  text-align: left;
+}
+
+.dropdown-container {
+  margin-top: 15em;
+  font-family: var(--secondary-font);
+  text-shadow: var(--secondary-text-shadow);
+  width: 20em;
+}
+
+.icon-container {
+  display: flex;
+  margin-top: 15em;
+  justify-content: center;
+  padding: 3em;
+  font-size: 0.7em;
+}
+
+.horizontal-line-container hr {
+  opacity: 1;
+  color: var(--primary-color);
+  width: 10em;
+
+  justify-content: center;
 }
