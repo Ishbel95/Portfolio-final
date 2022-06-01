@@ -167,12 +167,12 @@ h2,
 .horizontal-line {
   border-top: 3px solid white;
   width: 100%;
-  margin-top: 50%;
+  margin-top: 75%;
 }
 
 .vertical-line {
   border-left: 3px solid white;
-  height: 12em;
+  height: 11em;
   position: relative;
   left: 60%;
   top: 50%;
@@ -180,11 +180,12 @@ h2,
 
 .carousel {
   height: 100%;
-  margin-top: 5%;
+  margin-top: -1%;
   font-family: var(--secondary-font);
 }
 
 .carousel .carousel-item {
+  height: 25em;
   width: 37rem;
   padding: 0 2rem 0 7rem;
 }
@@ -198,14 +199,19 @@ h2,
 }
 .carousel .carousel-item .stack-icon {
   font-size: 2em;
-  padding: 0.2em;
-  text-align: center !important;
+  padding: 0.5em;
+  margin: 2.1em 0 0.5em 0.3em;
 }
 
 .icon-container {
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
   justify-content: center;
   padding: 0 3em 0 3em;
   font-size: 0.7em;
+}
+
+.icon-container-contact {
+  display: block;
+  justify-content: center;
 }
