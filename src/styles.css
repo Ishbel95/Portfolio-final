@@ -157,27 +157,55 @@ h2,
 }
 
 .dropdown-container {
-  margin-top: 15em;
   font-family: var(--secondary-font);
   text-shadow: var(--secondary-text-shadow);
+
   width: 20em;
+  margin: 20% 0;
+}
+
+.horizontal-line {
+  border-top: 3px solid white;
+  width: 100%;
+  margin-top: 50%;
+}
+
+.vertical-line {
+  border-left: 3px solid white;
+  height: 12em;
+  position: relative;
+  left: 60%;
+  top: 50%;
+}
+
+.carousel {
+  height: 100%;
+  margin-top: 5%;
+  font-family: var(--secondary-font);
+}
+
+.carousel .carousel-item {
+  width: 37rem;
+  padding: 0 2rem 0 7rem;
+}
+.carousel .carousel-item h3 {
+  font-size: 40px;
+  text-shadow: var(--secondary-text-shadow);
+}
+
+.carousel .carousel-item p {
+  font-size: 18px;
+}
+.carousel .carousel-item .stack-icon {
+  font-size: 2em;
+  padding: 0.2em;
+  text-align: center !important;
 }
 
 .icon-container {
   display: flex;
-  margin-top: 15em;
+  margin-top: 10%;
   justify-content: center;
-  padding: 3em;
+  padding: 0 3em 0 3em;
   font-size: 0.7em;
-}
-
-.horizontal-line-container hr {
-  opacity: 1;
-  color: var(--primary-color);
-  width: 25em;
-  justify-content: center;
-}
-.horizontal-line-container .horizontal-line-top {
-  position: absolute;
-  top: 200px;
 }

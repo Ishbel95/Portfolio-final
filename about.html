@@ -70,39 +70,130 @@
       </div>
     </nav>
     <h1 class="top-left-heading">About me</h1>
-    <div class="dropdown p-5 dropdown-container">
-      <a
-        class="btn btn-dark dropdown-toggle p-4 fs-5"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Find out more
-      </a>
-      <ul
-        class="dropdown-menu bg-dark shadow-lg"
-        aria-labelledby="dropdownMenuLink"
-      >
-        <li>
-          <a class="dropdown-item text-white fs-5" href="#">My journey</a>
-        </li>
-        <li>
-          <a class="dropdown-item text-white fs-5" href="#">My hobbies</a>
-        </li>
-        <li>
-          <a class="dropdown-item text-white fs-5" href="#">My stack</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="dropdown p-5 dropdown-container">
+            <a
+              class="btn btn-dark dropdown-toggle p-4 fs-5"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Find out more
+            </a>
+            <ul
+              class="dropdown-menu bg-dark shadow-lg"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item text-white fs-5" href="#">My journey</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white fs-5" href="#">My hobbies</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white fs-5" href="#">My stack</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="horizontal-line"></div>
+        </div>
+        <div class="col-sm-6">
+          <div class="carousel">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h3 class="text-white pb-4">My Journey</h3>
+                  <p class="d-block text-white">Front-end Development is the career made for me! I have had experience in theatre,recruitment, education and customer service but nothing has ever felt right... and then, I found coding.</p>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="text-white pb-4">My Hobbies</h3>
+                  <p class="d-block text-white ">When i'm not coding I love to...
+                    <ul class="text-white">
+                      <li>Practice Yoga</li>
+                      <li>Make clothes</li>
+                      <li>Write poetry and stories</li>
+                      <li>Spend time with my partner, family, friends and furry companions</li>
+                      <li>Convert a Horsebox into a tiny house with my partner!</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="text-white pb-4">My Stack</h3>
+                  <p class="d-block text-white">
+                    <i class="fa-brands fa-html5 stack-icon"></i>
+                    <i class="fa-brands fa-css3 stack-icon "></i>
+                    <i class="fa-brands fa-js stack-icon"></i>
+                    <i class="fa-brands fa-bootstrap stack-icon"></i>
+                    <i class="fa-brands fa-react stack-icon"></i>
+                  </p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      
     </div>
-    <div class="horizontal-line-container">
-      <hr class="horizontal-line-top" />
-    </div>
-    <div class="horizontal-line-container">
-      <hr class="horizontal-line-bottom" />
-    </div>
-
     <footer>
       <div class="d-flex icon-container">
         <div class="social-icon">
