@@ -186,7 +186,7 @@ h2,
 
 .carousel .carousel-item {
   height: 25em;
-  width: 37rem;
+  width: 43rem;
   padding: 0 2rem 0 7rem;
 }
 .carousel .carousel-item h3 {
@@ -200,18 +200,83 @@ h2,
 .carousel .carousel-item .stack-icon {
   font-size: 2em;
   padding: 0.5em;
-  margin: 2.1em 0 0.5em 0.3em;
+  margin: 2.1em 0 0.5em 0.8em;
 }
 
 .icon-container {
-  display: flex;
   margin-top: 5%;
   justify-content: center;
   padding: 0 3em 0 3em;
   font-size: 0.7em;
 }
-
 .icon-container-contact {
-  display: block;
   justify-content: center;
+}
+.social-icon-contact i {
+  margin: 1.6em 0.8em;
+  font-size: 10em;
+  color: var(--primary-color);
+}
+.flicker-linkedin {
+  animation: flicker-linkedin 3s infinite linear alternate;
+}
+@keyframes flicker-linkedin {
+  59%,
+  71%,
+  79% {
+    opacity: 1;
+  }
+  64%,
+  66%,
+  75%,
+  78% {
+    opacity: 0.3;
+  }
+  67%,
+  69%,
+  76% {
+    opacity: 0.8;
+  }
+}
+.flicker-github {
+  animation: flicker-github 5s infinite linear alternate;
+}
+@keyframes flicker-github {
+  59%,
+  71%,
+  79% {
+    opacity: 1;
+  }
+  64%,
+  66%,
+  75%,
+  78% {
+    opacity: 0.3;
+  }
+  67%,
+  69%,
+  76% {
+    opacity: 0.8;
+  }
+}
+.flicker-email {
+  animation: flicker-email 4s infinite linear alternate;
+}
+@keyframes flicker-email {
+  59%,
+  71%,
+  79% {
+    opacity: 1;
+  }
+  64%,
+  66%,
+  75%,
+  78% {
+    opacity: 0.3;
+  }
+  67%,
+  69%,
+  76% {
+    opacity: 0.8;
+  }
 }
