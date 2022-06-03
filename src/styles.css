@@ -6,7 +6,10 @@
   --secondary-text-shadow: 0 0 10px #fff;
   --primary-font: "Londrina Shadow", cursive;
   --secondary-font: "Lexend Mega", sans-serif;
-  --background-color: #212529;
+  --third-font: "Flavors", cursive;
+  --fourth-font: "Nosifer", cursive;
+  --fifth-font: "Oi", cursive;
+  --background-color: #0d0e13;
 }
 
 body {
@@ -14,11 +17,15 @@ body {
 }
 
 h1 {
-  color: var(--primary-color);
-  text-shadow: var(--text-shadow);
   font-family: var(--primary-font);
   font-size: 6em;
   letter-spacing: 0.2em;
+  color: var(--primary-color);
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #ffffff 0%, #ffffff 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 h2 {
   color: var(--primary-color);
@@ -26,15 +33,19 @@ h2 {
   padding: 30px;
   text-align: center;
   text-shadow: var(--secondary-text-shadow);
+  font-weight: 200;
 }
 .home-heading {
   text-align: center;
-  margin-top: 2.5em;
+  margin-top: 0.3em;
 }
 h2,
 .navigation {
   font-family: var(--secondary-font);
-  font-weight: 200;
+}
+.navigation {
+  background: rgba(13, 14, 19, 0.6) !important;
+  font-weight: 400;
 }
 .neon-flicker {
   animation: blink 5s infinite linear alternate;
@@ -81,25 +92,23 @@ h2,
   transition: all 300ms ease-out;
 }
 
-.home-image {
-  background: url(/images/motherboard-dark.jpg);
+.background-video {
+  width: 100vw;
+  height: 28vh;
+  object-fit: cover;
   position: relative;
-  height: 50vh;
-  justify-content: center;
-  background-size: 100%;
-  display: flex;
-  text-align: center;
+  z-index: -1;
 }
 .background-gradient {
-  background: rgb(0, 0, 0);
+  background: #0d0e13;
   background: linear-gradient(
-    to bottom,
-    rgb(33, 37, 41) 0%,
-    rgba(33, 37, 41, 0.753) 25%,
+    to top,
+    #0d0e14 0%,
+    rgba(33, 37, 41, 0.473) 50%,
     rgba(0, 212, 255, 0) 100%
   );
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   position: absolute;
   z-index: 3;
 }
