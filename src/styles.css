@@ -9,7 +9,7 @@
   --third-font: "Flavors", cursive;
   --fourth-font: "Nosifer", cursive;
   --fifth-font: "Oi", cursive;
-  --background-color: #0d0e13;
+  --background-color: #74a0b9;
 }
 
 body {
@@ -44,7 +44,7 @@ h2,
   font-family: var(--secondary-font);
 }
 .navigation {
-  background: rgba(13, 14, 19, 0.6) !important;
+  background: rgba(116, 160, 185 0.6) !important;
   font-weight: 400;
 }
 .neon-flicker {
@@ -92,38 +92,31 @@ h2,
   transition: all 300ms ease-out;
 }
 
-.background-video {
-  width: 100vw;
-  height: 28vh;
-  object-fit: cover;
+.home-image {
+  background: url(/images/hanging-sky.jpg);
   position: relative;
+  height: 80vh;
+  justify-content: center;
+  background-size: 100%;
+  display: flex;
+  text-align: center;
+}
+.background-video {
+  position: fixed;
   z-index: -1;
 }
 .background-gradient {
-  background: #0d0e13;
+  background: #818489;
   background: linear-gradient(
     to top,
-    #0d0e14 0%,
-    rgba(33, 37, 41, 0.473) 50%,
+    #74a0b9 0%,
+    #74a0b913 50%,
     rgba(0, 212, 255, 0) 100%
   );
   width: 100%;
-  height: 30vh;
+  height: 82vh;
   position: absolute;
   z-index: 3;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    margin-top: 3em;
-    font-size: 4.5em;
-  }
-  .social-icon i {
-    font-size: 2em;
-  }
-  .home-image {
-    height: 55vh;
-  }
 }
 
 @media (max-width: 768px) {
@@ -288,4 +281,8 @@ h2,
   76% {
     opacity: 0.8;
   }
+}
+
+.project-screenshots {
+  margin-top: 90px;
 }
