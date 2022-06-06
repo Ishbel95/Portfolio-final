@@ -4,23 +4,24 @@
   --text-shadow: 0px 0px 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
     0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 120px #ffffff;
   --secondary-text-shadow: 0 0 10px #fff;
-  --primary-font: "Londrina Shadow", cursive;
-  --secondary-font: "Lexend Mega", sans-serif;
-  --third-font: "Flavors", cursive;
-  --fourth-font: "Nosifer", cursive;
-  --fifth-font: "Oi", cursive;
-  --sixth-font: "Amatic SC", cursive;
-  --seven-font: "Viaoda Libre", cursive;
+  --primary-font: "Amatic SC", cursive;
+  --secondary-font: "Aclonica", sans-serif;
+  --third-font: "IM Fell DW Pica", serif;
+  --fourth-font: "IM Fell DW Pica SC", serif;
+  --fifth-font: "Reenie Beanie", cursive;
+  --sixth-font: "Sofadi One", cursive;
+  --seventh-font: "Sue Ellen Francisco", cursive;
+  --eighth-font: "Viaoda Libre", cursive;
   --background-color: #315263;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: var(--sixth-font);
+  font-family: var(--primary-font);
 }
 
 h1 {
-  font-family: var(--sixth-font);
+  font-family: var(--seventh-font);
   font-size: 6em;
   letter-spacing: 0.2em;
   color: var(--primary-color);
@@ -46,7 +47,7 @@ h2 {
 }
 h2,
 .navigation {
-  font-family: var(--sixth-font);
+  font-family: var(--primary-font);
 }
 .navigation {
   background: rgba(49, 82, 99, 0.4) !important;
@@ -289,4 +290,26 @@ h2,
 
 .project-screenshots {
   margin-top: 90px;
+}
+
+.underline-animation {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
