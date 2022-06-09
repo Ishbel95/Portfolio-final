@@ -49,13 +49,13 @@ h2,
   background: rgba(49, 82, 99, 0.4) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .navigation-secondary {
   background: var(--third-color-opacity) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .navbar-brand {
   font-size: 1.3em;
