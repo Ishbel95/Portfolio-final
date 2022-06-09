@@ -1,6 +1,8 @@
 :root {
   --primary-color: rgb(255, 255, 255);
-  --secondary-color: #1b2d36;
+  --secondary-color: rgb(27, 45, 54);
+  --third-color: rgb(117, 142, 155);
+  --third-color-opacity: rgba(153, 185, 201, 0.5);
   --text-shadow: 0px 0px 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
     0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 120px #ffffff;
   --secondary-text-shadow: 0 0 10px #fff;
@@ -45,6 +47,12 @@ h2,
 }
 .navigation {
   background: rgba(49, 82, 99, 0.4) !important;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+}
+.navigation-secondary {
+  background: var(--third-color-opacity) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 2em;
@@ -277,7 +285,7 @@ h2,
 }
 
 .project-screenshots {
-  margin-top: 90px;
+  margin-top: 3.5em;
 }
 
 .underline-animation {
@@ -305,17 +313,18 @@ h2,
 .card-container {
   position: relative;
   width: 400px;
-  height: 550px;
+  height: 485px;
 }
-
+.card-container img {
+  height: 30em;
+  border-radius: 5%;
+}
 .project-card {
   position: absolute;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 1s ease;
-
-  border-radius: 5%;
 }
 
 .card-front {
@@ -323,26 +332,45 @@ h2,
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: var(--primary-color);
-  border-radius: 5%;
+  background: var(--third-color);
+  border: solid 1px var(--primary-color);
+  border-radius: 3%;
 }
 .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
+
   backface-visibility: hidden;
   background: var(--primary-color);
-  border-radius: 5%;
+  border-radius: 3%;
   transform: rotateY(180deg);
   text-align: center;
 }
 .card-back h4 {
   margin: 5%;
   font-size: 4.5em;
+  color: var(--third-color);
 }
 .card-back p {
   font-size: 2.2em;
+  color: var(--third-color);
 }
 .project-card:hover {
   transform: rotateY(180deg);
+}
+.project-button {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 4%;
+  margin: 7% auto;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  display: block;
+  width: 10em;
+  transition: all 250ms ease-in;
+}
+.project-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
