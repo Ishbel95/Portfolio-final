@@ -376,9 +376,9 @@ h2,
 .contact-form {
   display: block;
   margin: 5% auto;
-  width: 20em;
+  width: 47%;
   color: var(--primary-color);
-  font-size: 2em;
+  font-size: 200%;
   letter-spacing: 0.1em;
   border: 1px solid var(--primary-color);
   border-radius: 2%;
@@ -389,10 +389,10 @@ h2,
   border: 1px solid var(--primary-color);
   padding: 2%;
   margin: 3.5% auto;
-  font-size: 1em;
+  font-size: 100%;
   letter-spacing: 0.1em;
   display: block;
-  width: 5em;
+  width: 90%;
   transition: all 250ms ease-in;
 }
 
