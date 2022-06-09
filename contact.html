@@ -31,10 +31,10 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark navigation fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-dark navigation-secondary fixed-top"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand underline-animation" href="/">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,20 +49,63 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link underline-animation" href="/about.html"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects.html">Projects</a>
+              <a class="nav-link underline-animation" href="/projects.html"
+                >Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link underline-animation" href="/contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <h1 class="top-left-heading">Contact me</h1>
-
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/xqknjbqw"
+      method="POST"
+    >
+      <div class="mb-3">
+        <label for="name" class="form-label">Full name:</label>
+        <input
+          type="text"
+          class="form-control fs-4"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address:</label>
+        <input
+          type="email"
+          class="form-control fs-4"
+          id="email"
+          placeholder="name@example.com"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea
+          class="form-control fs-4"
+          id="message"
+          rows="3"
+          name="message"
+          required
+        ></textarea>
+        <button type="submit" class="btn form-button">Submit</button>
+      </div>
+    </form>
     <footer>
       <div class="d-flex icon-container">
         <div class="social-icon">

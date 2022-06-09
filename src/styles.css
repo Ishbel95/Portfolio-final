@@ -373,3 +373,30 @@ h2,
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
+.contact-form {
+  display: block;
+  margin: 5% auto;
+  width: 20em;
+  color: var(--primary-color);
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--primary-color);
+  border-radius: 2%;
+  padding: 3%;
+}
+.form-button {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 2%;
+  margin: 3.5% auto;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  display: block;
+  width: 5em;
+  transition: all 250ms ease-in;
+}
+
+.form-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
