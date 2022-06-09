@@ -301,3 +301,48 @@ h2,
   transform: scaleX(1);
   transform-origin: left;
 }
+
+.card-container {
+  position: relative;
+  width: 400px;
+  height: 550px;
+}
+
+.project-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+
+  border-radius: 5%;
+}
+
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: var(--primary-color);
+  border-radius: 5%;
+}
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: var(--primary-color);
+  border-radius: 5%;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+.card-back h4 {
+  margin: 5%;
+  font-size: 4.5em;
+}
+.card-back p {
+  font-size: 2.2em;
+}
+.project-card:hover {
+  transform: rotateY(180deg);
+}
