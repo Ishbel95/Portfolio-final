@@ -1,8 +1,8 @@
 function journey(event) {
   event.preventDefault();
   document.querySelector("#about-category").innerHTML = `<div id="journey">
-    <h3 class="text-white pb-4 heading-carousel">My Journey</h3>
-    <p class="d-block text-white">
+    <h3 class="text-white pb-4 about-heading">My Journey</h3>
+    <p class="d-block text-white about-paragraphs">
       Front-end Development is the career made for me! I have had experience
       in theatre,recruitment, education and customer service but nothing has
       ever felt right... and then, I found coding.
@@ -13,9 +13,9 @@ function journey(event) {
 function hobby(event) {
   event.preventDefault();
   document.querySelector("#about-category").innerHTML = ` <div id="hobbies">
-    <h3 class="text-white pb-4 heading-carousel">My Hobbies</h3>
-    <p class="d-block text-white">When i'm not coding I love to...</p>
-    <ul class="text-white carousel-list">
+    <h3 class="text-white pb-4 about-heading">My Hobbies</h3>
+    <p class="d-block text-white about-paragraphs">When i'm not coding I love to...</p>
+    <ul class="text-white hobby-list">
       <li>Practice Yoga</li>
       <li>Make clothes</li>
       <li>Write poetry and stories</li>
@@ -30,8 +30,8 @@ function hobby(event) {
 function stack(event) {
   event.preventDefault();
   document.querySelector("#about-category").innerHTML = `<div id="stack">
-    <h3 class="text-white pb-4 heading-carousel">My Stack</h3>
-    <p class="d-block text-white">
+    <h3 class="text-white pb-4 about-heading">My Stack</h3>
+    <p class="d-block text-white about-paragraphs">
       <i class="fa-brands fa-html5 stack-icon"></i>
       <i class="fa-brands fa-css3 stack-icon"></i>
       <i class="fa-brands fa-js stack-icon"></i>
