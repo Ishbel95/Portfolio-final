@@ -1,6 +1,6 @@
 function journey(event) {
   event.preventDefault();
-  document.querySelector(".loading").style.display = "none";
+
   document.querySelector("#about-category").innerHTML = `<div id="journey">
     <h3 class="text-white pb-4 about-heading">My Journey</h3>
     <p class="d-block text-white about-paragraphs">
@@ -13,7 +13,7 @@ function journey(event) {
 
 function hobby(event) {
   event.preventDefault();
-  document.querySelector(".loading").style.display = "none";
+
   document.querySelector("#about-category").innerHTML = ` <div id="hobbies">
     <h3 class="text-white pb-4 about-heading">My Hobbies</h3>
     <p class="d-block text-white about-paragraphs hobby-paragraph">When i'm not coding I love to...</p>
@@ -31,7 +31,7 @@ function hobby(event) {
 
 function stack(event) {
   event.preventDefault();
-  document.querySelector(".loading").style.display = "none";
+
   document.querySelector("#about-category").innerHTML = `<div id="stack">
     <h3 class="text-white pb-4 about-heading">My Stack</h3>
     <p class="d-block text-white about-paragraphs">
