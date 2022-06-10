@@ -1,19 +1,10 @@
 :root {
   --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(27, 45, 54);
-  --third-color: rgb(117, 142, 155);
+  --third-color: #748d9a;
   --third-color-opacity: rgba(153, 185, 201, 0.233);
-  --text-shadow: 0px 0px 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
-    0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 120px #ffffff;
-  --secondary-text-shadow: 0 0 10px #fff;
   --primary-font: "Amatic SC", cursive;
-  --secondary-font: "Aclonica", sans-serif;
-  --third-font: "IM Fell DW Pica", serif;
-  --fourth-font: "IM Fell DW Pica SC", serif;
-  --fifth-font: "Reenie Beanie", cursive;
-  --sixth-font: "Sofadi One", cursive;
-  --seventh-font: "Sue Ellen Francisco", cursive;
-  --eighth-font: "Viaoda Libre", cursive;
+  --secondary-font: "Sue Ellen Francisco", cursive;
   --background-color: #315263;
 }
 
@@ -23,7 +14,7 @@ body {
 }
 
 h1 {
-  font-family: var(--seventh-font);
+  font-family: var(--secondary-font);
   font-size: 7.8em;
   letter-spacing: 0.2em;
   color: var(--primary-color);
@@ -189,11 +180,10 @@ h2,
   border-radius: 2%;
   height: 40vh;
   width: 40vw;
-  background-color: var(--third-color);
 }
 
 .about-heading {
-  font-family: var(--seventh-font);
+  font-family: var(--secondary-font);
   letter-spacing: 0.1em;
   font-size: 4.5em;
   text-align: center;
@@ -329,7 +319,7 @@ h2,
   width: 47%;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  background-color: var(--third-color);
+
   border-radius: 2%;
   font-size: 200%;
   letter-spacing: 0.1em;
