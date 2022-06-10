@@ -34,13 +34,13 @@ function stack(event) {
 
   document.querySelector("#about-category").innerHTML = `<div id="stack">
     <h3 class="text-white pb-4 about-heading">My Stack</h3>
-    <p class="d-block text-white about-paragraphs">
+    <div class = "stack-container">
       <i class="fa-brands fa-html5 stack-icon"></i>
       <i class="fa-brands fa-css3 stack-icon"></i>
       <i class="fa-brands fa-js stack-icon"></i>
       <i class="fa-brands fa-bootstrap stack-icon"></i>
       <i class="fa-brands fa-react stack-icon"></i>
-    </p>
+    </div>
   </div>`;
 }
 
