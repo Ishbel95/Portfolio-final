@@ -2,7 +2,7 @@
   --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(27, 45, 54);
   --third-color: rgb(117, 142, 155);
-  --third-color-opacity: rgba(153, 185, 201, 0.5);
+  --third-color-opacity: rgba(153, 185, 201, 0.233);
   --text-shadow: 0px 0px 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
     0 0 40px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 120px #ffffff;
   --secondary-text-shadow: 0 0 10px #fff;
@@ -45,7 +45,7 @@ h2 {
 }
 @keyframes flyIn {
   0% {
-    transform: translateY(50%);
+    transform: translateY(30%);
     opacity: 0;
   }
   50% {
@@ -143,10 +143,11 @@ h2,
   background-color: #315263;
   border: solid 1px var(--secondary-color);
 }
+
 .dropdown-menu li a {
   font-size: 2.3em !important;
   letter-spacing: 0.1em;
-  color: var(--secondary-color);
+  color: var(--third-color);
 }
 .dropdown-menu li a:hover {
   background-color: #315263;
@@ -188,14 +189,7 @@ h2,
   border-radius: 2%;
   height: 40vh;
   width: 40vw;
-}
-.about-info-container {
-  margin: 10em auto;
-  display: block;
-  width: 47%;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 2%;
+  background-color: var(--third-color);
 }
 
 .about-heading {
@@ -213,8 +207,11 @@ h2,
 }
 .hobby-list {
   font-size: 1.3em;
-  margin-top: -5%;
+  margin-top: -4%;
   animation: flyIn 3s ease-in;
+}
+.hobby-paragraph {
+  margin-top: -4%;
 }
 .stack-icon {
   font-size: 1.7em;
@@ -235,9 +232,6 @@ h2,
   margin: 1.6em 0.8em;
   font-size: 10em;
   color: var(--primary-color);
-}
-.social-icon-about {
-  font-size: em;
 }
 
 .project-screenshots {
@@ -273,8 +267,8 @@ h2,
 }
 .card-container img {
   height: 30em;
-  border-radius: 5%;
-  border: solid 1px var(--third-color);
+  border-radius: 3%;
+  border: solid 1px var(--primary-color);
 }
 .project-card {
   position: absolute;
@@ -335,6 +329,7 @@ h2,
   width: 47%;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  background-color: var(--third-color);
   border-radius: 2%;
   font-size: 200%;
   letter-spacing: 0.1em;

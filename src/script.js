@@ -14,7 +14,7 @@ function hobby(event) {
   event.preventDefault();
   document.querySelector("#about-category").innerHTML = ` <div id="hobbies">
     <h3 class="text-white pb-4 about-heading">My Hobbies</h3>
-    <p class="d-block text-white about-paragraphs">When i'm not coding I love to...</p>
+    <p class="d-block text-white about-paragraphs hobby-paragraph">When i'm not coding I love to...</p>
     <ul class="text-white hobby-list">
       <li>Practice Yoga</li>
       <li>Make clothes</li>
