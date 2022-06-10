@@ -145,11 +145,12 @@ h2,
   color: var(--primary-color);
 }
 .about-img img {
-  border-radius: 10%;
+  border: solid 1px var(--primary-color);
+  border-radius: 100%;
   width: 50%;
   display: block;
   margin: 5% auto;
-  filter: sepia(60%);
+  filter: grayscale(90%);
 }
 .loading {
   text-align: center;
