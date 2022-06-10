@@ -19,14 +19,16 @@
       src="https://kit.fontawesome.com/7a03b5d200.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amatic+SC:wght@700&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&family=Reenie+Beanie&family=Sofadi+One&family=Sue+Ellen+Francisco&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amatic+SC:wght@700&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@0;1&family=Reenie+Beanie&family=Sofadi+One&family=Sue+Ellen+Francisco&family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/styles.css" />
-    <script src="/src/script.js"></script>
     <title>Front-end Developer - Ishbel Fahey-Theaker</title>
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark navigation fixed-top"
+      class="navbar navbar-expand-lg navbar-dark bg-dark navigation-secondary fixed-top"
     >
       <div class="container-fluid">
         <a class="navbar-brand underline-animation" href="/">Home</a>
@@ -64,140 +66,53 @@
     </nav>
     <h1 class="top-left-heading">About me</h1>
     <div class="container about-info-container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="dropdown p-5 dropdown-container">
-            <a
-              class="btn dropdown-toggle p-4"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Find out more
-            </a>
-            <ul
-              class="dropdown-menu shadow-lg"
-              aria-labelledby="dropdownMenuLink"
-            >
-              <li>
-                <a class="dropdown-item" href="#">My journey</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">My hobbies</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">My stack</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="carousel">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-bs-ride="true"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <h3 class="text-white pb-4 heading-carousel">My Journey</h3>
-                  <p class="d-block text-white">Front-end Development is the career made for me! I have had experience in theatre,recruitment, education and customer service but nothing has ever felt right... and then, I found coding.</p>
-                </div>
-                <div class="carousel-item">
-                  <h3 class="text-white pb-4 heading-carousel">My Hobbies</h3>
-                  <p class="d-block text-white ">When i'm not coding I love to...
-                    <ul class="text-white carousel-list">
-                      <li>Practice Yoga</li>
-                      <li>Make clothes</li>
-                      <li>Write poetry and stories</li>
-                      <li>Spend time with my partner, family, friends and furry companions</li>
-                      <li>Convert a Horsebox into a tiny house with my partner!</li>
-                    </ul>
-                  </p>
-                </div>
-                <div class="carousel-item">
-                  <h3 class="text-white pb-4 heading-carousel">My Stack</h3>
-                  <p class="d-block text-white">
-                    <i class="fa-brands fa-html5 stack-icon"></i>
-                    <i class="fa-brands fa-css3 stack-icon "></i>
-                    <i class="fa-brands fa-js stack-icon"></i>
-                    <i class="fa-brands fa-bootstrap stack-icon"></i>
-                    <i class="fa-brands fa-react stack-icon"></i>
-                  </p>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="dropdown p-5 dropdown-container">
+        <a
+          class="btn dropdown-toggle p-4"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Find out more
+        </a>
+        <ul class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#" id="journey-button">My journey</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="hobby-button">My hobbies</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" id="stack-button">My stack</a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <div id="about-category"></div>
+
     <footer>
-      <div class="d-flex icon-container-contact">
-        <div class="social-icon-about">
+      <div class="d-flex icon-container">
+        <div class="social-icon">
           <a
             href="https://www.linkedin.com/in/ishbel-fahey-theaker-a496b6221/"
             target="_blank"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
-        <div class="social-icon-contact">
+        <div class="social-icon">
           <a href="https://github.com/Ishbel95" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
         </div>
-        <div class="social-icon-contact">
+        <div class="social-icon">
           <a href="mailto:ishbel95@hotmail.com" target="_blank"
             ><i class="fa-solid fa-at"></i
           ></a>
         </div>
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
