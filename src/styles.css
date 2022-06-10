@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-family: var(--secondary-font);
-  font-size: 7.8em;
+
   letter-spacing: 0.2em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
@@ -31,6 +31,7 @@ h2 {
   animation: flyIn 3s ease-in;
 }
 .home-heading {
+  font-size: 7.8em;
   text-align: center;
   margin-top: 0.3em;
 }
@@ -71,7 +72,6 @@ h2,
 .home-image {
   background: url(/images/fairy.jpg);
   position: relative;
-
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -129,6 +129,7 @@ h2,
   transform-origin: left;
 }
 .sub-heading {
+  font-size: 7.8em;
   margin-top: 1em;
   text-align: center;
 }
@@ -247,16 +248,17 @@ h2,
 }
 
 .project-screenshots {
-  margin-top: 3.5em;
+  margin-top: 6em;
 }
 
 .card-container {
+  display: flex;
   position: relative;
-  width: 25em;
-  height: 31em;
+  height: 32em;
+  margin: 1em;
 }
 .card-container img {
-  height: 30em;
+  height: 100%;
   border-radius: 2%;
   border: solid 1px var(--primary-color);
 }
@@ -288,7 +290,7 @@ h2,
 }
 .card-back h4 {
   margin: 5%;
-  font-size: 4.5em;
+  font-size: 3.5em;
   color: var(--primary-color);
 }
 .card-back p {
