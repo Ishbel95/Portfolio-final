@@ -464,10 +464,10 @@ h2 {
 
 @media (max-width: 425px) {
   h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .home-heading {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
   .navigation,
   .navigation-secondary {
