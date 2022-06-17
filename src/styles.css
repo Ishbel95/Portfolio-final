@@ -127,15 +127,11 @@ h2,
   position: relative;
   z-index: 5;
   color: var(--primary-color);
-  background-color: var(--third-color);
-
+  background-color: var(--third-color-opacity);
   border-radius: 50%;
 }
 
 .social-icon i:hover {
-  transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
   color: var(--third-color);
   background-color: var(--primary-color);
   transition: all 400ms ease-out;

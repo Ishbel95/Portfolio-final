@@ -4,12 +4,13 @@ function journey(event) {
   document.querySelector("#about-category").innerHTML = `<div id="journey">
     <h3 class="text-white pb-4 about-heading">My Journey</h3>
     <p class="d-block text-white journey-paragraph">
-       I've worked as a SEN practioner for many years,
+       I've worked as a Special Educational Needs practioner for many years;
       working in schools, theatre and even educational recruitment. However, with myself and my partner converting a
-      Horse lorry into a tiny house, I knew it was time to realise my dreams and find my passion. And so, I found 
-      the wonderous world of code...All I could think was; 'Finally! I've found a realisation of how my brain works!"
-      I begun my journey into Front end development exploring; Freecodecamp, Code institute and am 
-      currently finishing my studies as a SheCodes alumni. Coding has changed my life, I have found my passion, my creativity 
+      Horse lorry into a tiny house, I knew it was time to realise my dreams and find my passion. And so, I discovered 
+      the wonderous world of code...All I could think was: 'Finally! I've found a realisation of how my brain works!"
+      I begun my journey into Front end development exploring Freecodecamp, Code institute and am 
+      currently continuing my studies at SheCodes. I am an extremely creative, logical and intuitive person; front-end development marries these qualities 
+      together perfectly. Learning to code has changed my life, I have found my passion, my creativity 
       , my code.
     </p>
   </div>`;
@@ -26,9 +27,9 @@ function hobby(event) {
       <li>Make clothes</li>
       <li>Write poetry</li>
       <li>
-        Create colourful make-up looks
+        Experiment with Make-up
       </li>
-      <li>Convert a Horsebox into a tiny home</li>
+      <li>Listen to music</li>
     </ul>
   </div>`;
 }
