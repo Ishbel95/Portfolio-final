@@ -68,7 +68,36 @@ h2,
 .navbar-brand {
   font-size: 1.3em;
 }
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.active-link {
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  color: var(--primary-color);
+}
 
+.underline-animation {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .home-image {
   background: url(/images/fairy.jpg);
   position: relative;
@@ -110,27 +139,7 @@ h2,
   background-color: var(--primary-color);
   transition: all 400ms ease-out;
 }
-.underline-animation {
-  color: var(--primary-color);
-  position: relative;
-}
 
-.underline-animation::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--primary-color);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-.underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 .sub-heading {
   font-size: 8.2em;
   margin-top: 1em;
