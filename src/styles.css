@@ -271,7 +271,7 @@ h2,
 .card-container {
   display: flex;
   position: relative;
-  height: 62.5vh;
+  height: 66vh;
   margin: 1em;
 }
 .card-container img {
@@ -310,19 +310,19 @@ h2,
 .card-back h4 {
   padding-top: 2%;
   margin: 5%;
-  font-size: 3.5em;
+  font-size: 4em;
   color: var(--primary-color);
 }
 .card-back p {
   padding: 3%;
-  font-size: 1.4em;
+  font-size: 2em;
   color: var(--primary-color);
 }
 
 .project-icon {
   justify-items: center;
   padding: 5%;
-  font-size: 1.7em;
+  font-size: 2.5em;
   color: var(--primary-color);
   bottom: 0;
 }
@@ -380,7 +380,7 @@ h2,
     font-size: 1.7em;
   }
   .card-container {
-    height: 25em;
+    height: 33em;
   }
 }
 @media (max-width: 1024px) {
@@ -466,7 +466,7 @@ h2,
     font-size: 1.3em;
   }
   .sub-heading {
-    font-size: 3.5em;
+    font-size: 3.7em;
     margin-top: 30%;
   }
 
