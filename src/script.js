@@ -4,7 +4,7 @@ function journey(event) {
   document.querySelector("#about-category").innerHTML = `<div id="journey">
     <h3 class="text-white pb-4 about-heading">My Journey</h3>
     <p class="d-block text-white journey-paragraph">
-       I've worked as a Special Educational Needs practioner for many years;
+       I've worked as a Special educational needs practioner for many years;
       working in schools, theatre and even educational recruitment. However, with myself and my partner converting a
       Horse lorry into a tiny house, I knew it was time to realise my dreams and find my passion. And so, I discovered 
       the wonderous world of code...All I could think was: 'Finally! I've found a realisation of how my brain works!"
@@ -40,11 +40,11 @@ function stack(event) {
   document.querySelector("#about-category").innerHTML = `<div id="stack">
     <h3 class="text-white pb-4 about-heading">My Stack</h3>
     <div class = "stack-container">
-      <i class="fa-brands fa-html5 stack-icon"></i>
-      <i class="fa-brands fa-css3 stack-icon"></i>
-      <i class="fa-brands fa-js stack-icon"></i>
-      <i class="fa-brands fa-bootstrap stack-icon"></i>
-      <i class="fa-brands fa-react stack-icon"></i>
+      <i class="fa-brands fa-html5 stack-icon" title="HTML Icon"></i>
+      <i class="fa-brands fa-css3 stack-icon" title="CSS Icon"></i>
+      <i class="fa-brands fa-js stack-icon" title="Javascript Icon"></i>
+      <i class="fa-brands fa-bootstrap stack-icon" title="Bootstrap Icon"></i>
+      <i class="fa-brands fa-react stack-icon" title="React Icon"></i>
     </div>
   </div>`;
 }

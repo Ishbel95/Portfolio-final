@@ -15,7 +15,6 @@ body {
 
 h1 {
   font-family: var(--secondary-font);
-
   letter-spacing: 0.2em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
@@ -30,29 +29,7 @@ h2 {
   letter-spacing: 0.2em;
   animation: flyIn 3s ease-in;
 }
-.home-heading {
-  font-size: 8em;
-  text-align: center;
-  margin-top: 0.3em;
-}
-@keyframes flyIn {
-  0% {
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-h2,
-.navigation {
-  font-family: var(--primary-font);
-}
+
 .navigation {
   background: rgba(49, 82, 99, 0.4) !important;
   font-weight: 400;
@@ -120,6 +97,30 @@ h2,
   position: absolute;
   z-index: 3;
 }
+.home-heading {
+  font-size: 8em;
+  text-align: center;
+  margin-top: 0.3em;
+}
+@keyframes flyIn {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.sub-heading {
+  font-size: 8.2em;
+  margin: 1em 0 0 0;
+  text-align: center;
+}
 .social-icon i {
   margin: 1em;
   padding: 0.2em;
@@ -153,11 +154,6 @@ h2,
   text-decoration: underline;
   text-decoration-thickness: 1px;
   color: var(--primary-color);
-}
-.sub-heading {
-  font-size: 8.2em;
-  margin: 1em 0 0 0;
-  text-align: center;
 }
 
 .dropdown-container {
