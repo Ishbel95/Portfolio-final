@@ -30,6 +30,8 @@ function hobby(event) {
         Experiment with Make-up
       </li>
       <li>Listen to music</li>
+      <li>Tiny home conversion</li>
+      <li>Play Ukulele</li>
     </ul>
   </div>`;
 }
