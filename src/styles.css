@@ -308,12 +308,13 @@ h2,
   text-align: center;
 }
 .card-back h4 {
+  padding-top: 2%;
   margin: 5%;
   font-size: 3.5em;
   color: var(--primary-color);
 }
 .card-back p {
-  padding: 1%;
+  padding: 3%;
   font-size: 1.4em;
   color: var(--primary-color);
 }
@@ -323,6 +324,7 @@ h2,
   padding: 5%;
   font-size: 1.7em;
   color: var(--primary-color);
+  bottom: 0;
 }
 .project-button {
   color: var(--primary-color);
@@ -375,7 +377,7 @@ h2,
     font-size: 6em;
   }
   .journey-paragraph {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
   .card-container {
     height: 25em;
@@ -420,7 +422,7 @@ h2,
   }
 
   .journey-paragraph {
-    font-size: 1.7em;
+    font-size: 1.55em;
   }
   .stack-container {
     flex-direction: column;
@@ -479,8 +481,11 @@ h2,
     width: 80%;
     font-size: 0.7em;
   }
+  .about-heading {
+    font-size: 3.5em;
+  }
   .journey-paragraph {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .stack-container {
     flex-direction: column;
@@ -494,10 +499,10 @@ h2,
     height: 28em;
   }
   .card-back p {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .card-back h4 {
-    font-size: 4em;
+    font-size: 3em;
   }
   .project-screenshots {
     margin-top: 1em;
