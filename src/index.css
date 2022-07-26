@@ -1,0 +1,160 @@
+:root {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(27, 45, 54);
+  --third-color: #748d9a;
+  --third-color-opacity: rgba(153, 185, 201, 0.151);
+  --primary-font: "Amatic SC", cursive;
+  --secondary-font: "Sue Ellen Francisco", cursive;
+  --background-color: #315263;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  animation: flyIn 3s ease-in;
+}
+h2 {
+  color: var(--primary-color);
+  padding-top: 1.1em;
+  text-align: center;
+  font-weight: 200;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  animation: flyIn 3s ease-in;
+}
+
+.navigation {
+  background: rgba(49, 82, 99, 0.4) !important;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.8em;
+}
+.navigation-secondary {
+  background: var(--third-color-opacity) !important;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.8em;
+}
+.navbar-brand {
+  font-size: 1.3em;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.active-link {
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  color: var(--primary-color);
+}
+
+.underline-animation {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.home-image {
+  background: url(/images/fairy.jpg);
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-gradient {
+  background: #315263;
+  background: linear-gradient(
+    to top,
+    #315263 6%,
+    #3152634d 40%,
+    #31526300 100%
+  );
+  width: 100%;
+  height: 71vh;
+  position: absolute;
+  z-index: 3;
+}
+.home-heading {
+  font-size: 8em;
+  text-align: center;
+  margin-top: 0.3em;
+}
+@keyframes flyIn {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.sub-heading {
+  font-size: 8.2em;
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+.icon-container {
+  margin-top: 3%;
+  justify-content: center;
+}
+.social-icon i {
+  margin: 1em;
+  padding: 0.2em;
+  font-size: 3em;
+  position: relative;
+  z-index: 5;
+  color: var(--primary-color);
+  background-color: var(--third-color-opacity);
+  border-radius: 50%;
+  transition: all 250ms ease-in;
+}
+
+.social-icon i:hover {
+  color: var(--third-color);
+  background-color: var(--primary-color);
+}
+.source-code-container {
+  letter-spacing: 0.1em;
+  color: var(--third-color);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  padding: 1%;
+}
+.source-code-container a {
+  text-decoration: none;
+  color: var(--third-color);
+  transition: all 200ms ease-in-out;
+}
+.source-code-container a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: var(--primary-color);
+}

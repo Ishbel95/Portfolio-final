@@ -1,0 +1,27 @@
+.contact-form {
+  display: block;
+  margin: 5% auto;
+  width: 47%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 2%;
+  font-size: 200%;
+  letter-spacing: 0.1em;
+  padding: 3%;
+}
+.form-button {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 2%;
+  margin: 3.5% auto;
+  font-size: 100%;
+  letter-spacing: 0.1em;
+  display: block;
+  width: 90%;
+  transition: all 250ms ease-in;
+}
+
+.form-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
