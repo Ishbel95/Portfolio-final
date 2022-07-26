@@ -1,5 +1,5 @@
 .dropdown-container {
-  width: 30em;
+  width: min(90%, 600px);
   display: block;
   margin: auto;
 }
@@ -63,7 +63,7 @@
   border: solid 1px var(--primary-color);
   border-radius: 2%;
   height: 40em;
-  width: 65%;
+  width: min(90%, 800px);
 }
 
 .about-heading {

@@ -1,12 +1,12 @@
 .project-grid {
   display: grid;
-  gap: 4em;
+  gap: 1.5em;
   margin: 0 auto;
-  width: min(100%, 300em);
+  width: min(80%, 700px);
 }
-@media (min-width: 100em) {
+@media (min-width: 60em) {
   .project-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .project-screenshots {
