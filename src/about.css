@@ -62,7 +62,7 @@
   margin: 2% auto;
   border: solid 1px var(--primary-color);
   border-radius: 2%;
-  height: 40em;
+
   width: min(90%, 800px);
 }
 
@@ -95,12 +95,19 @@
   margin-top: -4%;
 }
 .stack-container {
-  display: flex;
+  display: grid;
+  gap: 1em;
+  text-align: center;
+  margin: 1%;
 }
 .stack-icon {
   color: var(--primary-color);
   font-size: var(--fs-m);
-  margin: 1.7em auto;
-  padding: 0.2em;
+  padding: 0.1em;
   animation: flyIn 3s ease-in;
+}
+@media (min-width: 60em) {
+  .stack-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
