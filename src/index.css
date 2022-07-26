@@ -7,24 +7,59 @@
   --secondary-font: "Sue Ellen Francisco", cursive;
   --background-color: #315263;
 }
+@media (min-width: 60em) {
+  :root {
+    --fs-xl: clamp(3.5rem, 15vh + 1rem, 10rem);
+    --fs-l: 5rem;
+    --fs-m: 4.5rem;
+    --fs-s: 2rem;
+    --fs-xs: 1.5rem;
+  }
+}
+@media (max-width: 60em) {
+  :root {
+    --fs-xl: clamp(3rem, 10vh + 1rem, 6rem);
+    --fs-l: 4rem;
+    --fs-m: 3rem;
+    --fs-s: 1.5rem;
+    --fs-xs: 0.5rem;
+  }
+}
 
 body {
   background-color: var(--background-color);
   font-family: var(--primary-font);
 }
 
-h1 {
+.home-heading {
+  font-size: var(--fs-xl);
+  text-align: center;
+  margin-top: 0.3em;
   font-family: var(--secondary-font);
   letter-spacing: 0.2em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
+}
+@keyframes flyIn {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 h2 {
   color: var(--primary-color);
   padding-top: 1.1em;
   text-align: center;
   font-weight: 200;
-  font-size: 4em;
+  font-size: var(--fs-m);
   letter-spacing: 0.2em;
   animation: flyIn 3s ease-in;
 }
@@ -33,16 +68,16 @@ h2 {
   background: rgba(49, 82, 99, 0.4) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: 1.8em;
+  font-size: var(--fs-s);
 }
 .navigation-secondary {
   background: var(--third-color-opacity) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: 1.8em;
+  font-size: var(--fs-s);
 }
 .navbar-brand {
-  font-size: 1.3em;
+  font-size: var(--fs-s);
 }
 .navbar-collapse {
   flex-grow: 0 !important;
@@ -96,29 +131,12 @@ h2 {
   position: absolute;
   z-index: 3;
 }
-.home-heading {
-  font-size: 8em;
-  text-align: center;
-  margin-top: 0.3em;
-}
-@keyframes flyIn {
-  0% {
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
+
 .sub-heading {
-  font-size: 8.2em;
+  font-size: var(--fs-xl);
   margin: 1em 0 0 0;
   text-align: center;
+  color: var(--primary-color);
 }
 .icon-container {
   margin-top: 3%;
@@ -127,7 +145,7 @@ h2 {
 .social-icon i {
   margin: 1em;
   padding: 0.2em;
-  font-size: 3em;
+  font-size: var(--fs-s);
   position: relative;
   z-index: 5;
   color: var(--primary-color);
@@ -144,7 +162,7 @@ h2 {
   letter-spacing: 0.1em;
   color: var(--third-color);
   text-align: center;
-  font-size: 2em;
+  font-size: var(--fs-s);
   font-weight: 100;
   padding: 1%;
 }

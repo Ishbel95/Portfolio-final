@@ -5,7 +5,7 @@
 }
 .dropdown-toggle {
   width: 100%;
-  font-size: 2em;
+  font-size: var(--fs-s);
   border: solid 1px var(--primary-color);
   color: var(--primary-color);
   transition: all 250ms ease-in;
@@ -69,7 +69,7 @@
 .about-heading {
   font-family: var(--secondary-font);
   letter-spacing: 0.1em;
-  font-size: 4.5em;
+  font-size: var(--fs-m);
   text-align: center;
   padding: 0.6em 0 0.3em 0;
   animation: flyIn 3s ease-in;
@@ -77,17 +77,17 @@
 
 .journey-paragraph {
   margin: 1em;
-  font-size: 2em;
+  font-size: var(--fs-s);
   animation: flyIn 3s ease-in;
 }
 .hobby-heading {
-  font-size: 2.1em;
+  font-size: var(--fs-s);
   padding-top: 2em;
   margin: 1em;
   animation: flyIn 3s ease-in;
 }
 .hobby-list {
-  font-size: 2em;
+  font-size: var(--fs-s);
   margin: 1em;
   animation: flyIn 3s ease-in;
 }
@@ -99,7 +99,7 @@
 }
 .stack-icon {
   color: var(--primary-color);
-  font-size: 4.3em;
+  font-size: var(--fs-m);
   margin: 1.7em auto;
   padding: 0.2em;
   animation: flyIn 3s ease-in;
