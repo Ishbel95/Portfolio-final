@@ -5,7 +5,7 @@
 }
 .dropdown-toggle {
   width: 100%;
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
   border: solid 1px var(--primary-color);
   color: var(--primary-color);
   transition: all 250ms ease-in;
@@ -20,7 +20,7 @@
 }
 
 .dropdown-menu li a {
-  font-size: 2em !important;
+  font-size: var(--fs-xs);
   letter-spacing: 0.1em;
   color: var(--third-color);
   transition: all 200ms ease-in;
@@ -31,15 +31,15 @@
 }
 .loading {
   text-align: center;
-  margin-top: 17em;
+  margin: 0 auto;
 }
 .loading span {
   display: inline-block;
   background-color: var(--primary-color);
   border-radius: 50%;
-  height: 1.5em;
-  width: 1.5em;
-  margin: 1.5em;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 15% 2% 15% 2%;
   animation: loading 2s linear infinite;
 }
 

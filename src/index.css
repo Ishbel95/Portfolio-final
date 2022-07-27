@@ -18,11 +18,11 @@
 }
 @media (max-width: 60em) {
   :root {
-    --fs-xl: clamp(3rem, 10vh + 1rem, 6rem);
+    --fs-xl: clamp(2rem, 7vh + 1rem, 6rem);
     --fs-l: 4rem;
     --fs-m: 3rem;
-    --fs-s: 1.5rem;
-    --fs-xs: 0.5rem;
+    --fs-s: 1.7rem;
+    --fs-xs: 1.3rem;
   }
 }
 
@@ -87,27 +87,28 @@ h2 {
   text-underline-offset: 16px;
   color: var(--primary-color);
 }
+@media (min-width: 992px) {
+  .underline-animation {
+    color: var(--primary-color);
+    position: relative;
+  }
 
-.underline-animation {
-  color: var(--primary-color);
-  position: relative;
-}
-
-.underline-animation::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--primary-color);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-.underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  .underline-animation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+  .underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 .home-image {
   background: url(/images/fairy.jpg);
