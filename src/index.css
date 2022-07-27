@@ -10,7 +10,7 @@
 @media (min-width: 60em) {
   :root {
     --fs-xl: clamp(3.5rem, 15vh + 1rem, 10rem);
-    --fs-l: 5rem;
+    --fs-l: 500%;
     --fs-m: 4.5rem;
     --fs-s: 2rem;
     --fs-xs: 1.5rem;
@@ -18,11 +18,11 @@
 }
 @media (max-width: 60em) {
   :root {
-    --fs-xl: clamp(2rem, 7vh + 1rem, 6rem);
-    --fs-l: 4rem;
+    --fs-xl: clamp(2rem, 6vh + 1rem, 6rem);
+    --fs-l: 180%;
     --fs-m: 3rem;
-    --fs-s: 1.7rem;
-    --fs-xs: 1.3rem;
+    --fs-s: 1.3rem;
+    --fs-xs: 1rem;
   }
 }
 
@@ -32,13 +32,32 @@ body {
 }
 
 .home-heading {
-  font-size: var(--fs-xl);
   text-align: center;
   margin-top: 0.3em;
   font-family: var(--secondary-font);
   letter-spacing: 0.2em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
+}
+
+@media (min-width: 922px) {
+  .home-heading {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 922px) {
+  .home-heading {
+    font-size: 9vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  .source-code-container {
+    font-size: 5vw !important;
+  }
 }
 @keyframes flyIn {
   0% {
@@ -59,7 +78,7 @@ h2 {
   padding-top: 1.1em;
   text-align: center;
   font-weight: 200;
-  font-size: var(--fs-m);
+
   letter-spacing: 0.2em;
   animation: flyIn 3s ease-in;
 }
@@ -163,7 +182,7 @@ h2 {
   letter-spacing: 0.1em;
   color: var(--third-color);
   text-align: center;
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
   font-weight: 100;
   padding: 1%;
 }
