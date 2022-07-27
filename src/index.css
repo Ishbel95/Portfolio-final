@@ -10,7 +10,7 @@
 @media (min-width: 60em) {
   :root {
     --fs-xl: clamp(3.5rem, 15vh + 1rem, 10rem);
-    --fs-l: 500%;
+    --fs-l: 6rem;
     --fs-m: 4.5rem;
     --fs-s: 2rem;
     --fs-xs: 1.5rem;
@@ -18,11 +18,11 @@
 }
 @media (max-width: 60em) {
   :root {
-    --fs-xl: clamp(2rem, 6vh + 1rem, 6rem);
-    --fs-l: 180%;
+    --fs-xl: clamp(2rem, 6vh + 1rem, 7rem);
+    --fs-l: 4rem;
     --fs-m: 3rem;
-    --fs-s: 1.3rem;
-    --fs-xs: 1rem;
+    --fs-s: 1.4rem;
+    --fs-xs: 1.3rem;
   }
 }
 
@@ -42,15 +42,15 @@ body {
 
 @media (min-width: 922px) {
   .home-heading {
-    font-size: 7vw;
+    font-size: 9vw;
   }
   h2 {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 @media (max-width: 922px) {
   .home-heading {
-    font-size: 9vw;
+    font-size: 10vw;
   }
   h2 {
     font-size: 5vw;

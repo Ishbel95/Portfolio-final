@@ -2,9 +2,9 @@
   display: grid;
   gap: 1.5em;
   margin: 0 auto;
-  width: min(90%, 900px);
+  width: min(100%, 900px);
 }
-@media (min-width: 60em) {
+@media (min-width: 922px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -16,9 +16,10 @@
 .card-container {
   display: flex;
   position: relative;
-  height: 66vh;
+  height: 65vh;
   margin: 1em;
 }
+
 .card-container img {
   height: 100%;
   border-radius: 2%;
@@ -41,6 +42,7 @@
   backface-visibility: hidden;
   border-radius: 3%;
 }
+
 .card-back {
   position: absolute;
   width: 100%;
@@ -50,6 +52,7 @@
   border-radius: 3%;
   transform: rotateY(180deg);
   text-align: center;
+  border: 1px solid var(--primary-color);
 }
 .card-back h4 {
   text-decoration: underline;
@@ -66,9 +69,10 @@
   font-size: var(--fs-xs);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  border-radius: 5%;
+  border-radius: 1%;
 }
-
+.project-icon-container {
+}
 .project-icon {
   justify-items: center;
   padding: 5%;
