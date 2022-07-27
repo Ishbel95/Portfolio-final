@@ -62,7 +62,6 @@
   margin: 2% auto;
   border: solid 1px var(--primary-color);
   border-radius: 2%;
-
   width: min(90%, 800px);
 }
 
@@ -108,6 +107,6 @@
 }
 @media (min-width: 60em) {
   .stack-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
