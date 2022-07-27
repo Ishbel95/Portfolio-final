@@ -71,8 +71,7 @@
   border: 1px solid var(--primary-color);
   border-radius: 1%;
 }
-.project-icon-container {
-}
+
 .project-icon {
   justify-items: center;
   padding: 5%;
