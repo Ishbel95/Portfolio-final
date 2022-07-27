@@ -47,7 +47,7 @@ function stack(event) {
       <i class="fa-brands fa-js stack-icon" title="Javascript Icon"></i>
       <i class="fa-brands fa-bootstrap stack-icon" title="Bootstrap Icon"></i>
       <i class="fa-brands fa-react stack-icon" title="React Icon"></i>
-      <i class="fa-brands fa-node" title="Node JS Icon"></i>
+      <i class="fa-brands fa-node stack-icon" title="Node JS Icon"></i>
       <i class="fa-brands fa-npm stack-icon" title="NPM Icon"></i>
       <i
       class="fa-solid fa-laptop stack-icon"
