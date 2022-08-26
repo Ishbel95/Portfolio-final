@@ -1,29 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+}
+
 :root {
   --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(27, 45, 54);
-  --third-color: #748d9a;
+  --third-color: #c6cfd3;
   --third-color-opacity: rgba(153, 185, 201, 0.151);
   --primary-font: "Amatic SC", cursive;
   --secondary-font: "Sue Ellen Francisco", cursive;
   --background-color: #315263;
-}
-@media (min-width: 60em) {
-  :root {
-    --fs-xl: clamp(3.5rem, 15vh + 1rem, 10rem);
-    --fs-l: 6rem;
-    --fs-m: 4.5rem;
-    --fs-s: 2rem;
-    --fs-xs: 1.5rem;
-  }
-}
-@media (max-width: 60em) {
-  :root {
-    --fs-xl: clamp(2rem, 6vh + 1rem, 7rem);
-    --fs-l: 4rem;
-    --fs-m: 3rem;
-    --fs-s: 1.4rem;
-    --fs-xs: 1.3rem;
-  }
 }
 
 body {
@@ -31,33 +23,18 @@ body {
   font-family: var(--primary-font);
 }
 
+.home-headings-container {
+  margin: 0 0.5em;
+}
 .home-heading {
+  font-size: 2rem;
   text-align: center;
-  margin-top: 0.3em;
+  margin: 0.3em 0 0.5em;
+  line-height: 1.5em;
   font-family: var(--secondary-font);
   letter-spacing: 0.2em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
-}
-
-@media (min-width: 922px) {
-  .home-heading {
-    font-size: 9vw;
-  }
-  h2 {
-    font-size: 4vw;
-  }
-}
-@media (max-width: 922px) {
-  .home-heading {
-    font-size: 10vw;
-  }
-  h2 {
-    font-size: 5vw;
-  }
-  .source-code-container {
-    font-size: 5vw !important;
-  }
 }
 @keyframes flyIn {
   0% {
@@ -75,11 +52,10 @@ body {
 }
 h2 {
   color: var(--primary-color);
-  padding-top: 1.1em;
+  padding-top: 0.1em;
+  margin-bottom: 1em;
   text-align: center;
-  font-weight: 200;
-
-  letter-spacing: 0.2em;
+  font-size: 1.5rem;
   animation: flyIn 3s ease-in;
 }
 
@@ -87,17 +63,13 @@ h2 {
   background: rgba(49, 82, 99, 0.4) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: var(--fs-s);
 }
 .navigation-secondary {
   background: var(--third-color-opacity) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-size: var(--fs-s);
 }
-.navbar-brand {
-  font-size: var(--fs-s);
-}
+
 .navbar-collapse {
   flex-grow: 0 !important;
 }
@@ -132,7 +104,8 @@ h2 {
 .home-image {
   background: url(/images/fairy.jpg);
   position: relative;
-  height: 70vh;
+  height: 30vh;
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,25 +120,52 @@ h2 {
     #31526300 100%
   );
   width: 100%;
-  height: 71vh;
+  height: 31vh;
   position: absolute;
   z-index: 3;
 }
 
+.home-main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 7em;
+}
+.home-main-content-primary a,
+.home-main-content-secondary a {
+  font-family: var(--secondary-font);
+  letter-spacing: 0.2em;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.home-main-content-primary,
+.home-main-content-secondary {
+  margin-bottom: 1em;
+  padding: 1em 0;
+}
+.home-main-content-primary {
+  border-left: solid 1px var(--primary-color);
+  border-right: solid 1px var(--primary-color);
+}
+.home-main-content-secondary {
+  border-top: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
+}
+
 .sub-heading {
-  font-size: var(--fs-xl);
-  margin: 1em 0 0 0;
   text-align: center;
   color: var(--primary-color);
 }
 .icon-container {
-  margin-top: 3%;
   justify-content: center;
 }
+
 .social-icon i {
+  font-size: 1.5rem;
   margin: 1em;
   padding: 0.2em;
-  font-size: var(--fs-s);
   position: relative;
   z-index: 5;
   color: var(--primary-color);
@@ -175,15 +175,15 @@ h2 {
 }
 
 .social-icon i:hover {
-  color: var(--third-color);
+  color: var(--secondary-color);
   background-color: var(--primary-color);
 }
 .source-code-container {
   letter-spacing: 0.1em;
+  font-size: 1rem;
   color: var(--third-color);
   text-align: center;
-  font-size: var(--fs-xs);
-  font-weight: 100;
+  font-weight: 300;
   padding: 1%;
 }
 .source-code-container a {
@@ -192,7 +192,6 @@ h2 {
   transition: all 200ms ease-in-out;
 }
 .source-code-container a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
