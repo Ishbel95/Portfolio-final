@@ -1,11 +1,11 @@
 .contact-form {
   display: block;
-  margin: 5% auto;
+  margin: 2em auto;
   width: min(90%, 800px);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 2%;
-  font-size: 200%;
+  font-size: 1.4rem;
   letter-spacing: 0.1em;
   padding: 3%;
 }
