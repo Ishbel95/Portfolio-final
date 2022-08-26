@@ -1,3 +1,5 @@
+/* general */
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +24,7 @@ body {
   background-color: var(--background-color);
   font-family: var(--primary-font);
 }
-
+/* headings */
 .home-headings-container {
   margin: 0 0.5em;
 }
@@ -59,7 +61,13 @@ h2 {
   animation: flyIn 3s ease-in;
 }
 
+/* navbar */
+.navbar-brand,
+.nav-link {
+  font-size: 1.2rem !important;
+}
 .navigation {
+  font-size: 1rem;
   background: rgba(49, 82, 99, 0.4) !important;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -96,11 +104,13 @@ h2 {
     transform-origin: right;
     transition: transform 250ms ease-in;
   }
-  .underline-animation:hover::after {
+  .underline-animation:hover::after,
+  .underline-animation:focus::after {
     transform: scaleX(1);
     transform-origin: left;
   }
 }
+/* layout */
 .home-image {
   background: url(/images/fairy.jpg);
   position: relative;
@@ -154,10 +164,7 @@ h2 {
   border-bottom: solid 1px var(--primary-color);
 }
 
-.sub-heading {
-  text-align: center;
-  color: var(--primary-color);
-}
+/* footer */
 .icon-container {
   justify-content: center;
 }
@@ -174,7 +181,8 @@ h2 {
   transition: all 250ms ease-in;
 }
 
-.social-icon i:hover {
+.social-icon i:hover,
+.social-icon i:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -191,7 +199,8 @@ h2 {
   color: var(--third-color);
   transition: all 200ms ease-in-out;
 }
-.source-code-container a:hover {
+.source-code-container a:hover,
+.source-code-container a:focus {
   border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
 }

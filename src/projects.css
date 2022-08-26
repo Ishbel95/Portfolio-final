@@ -2,11 +2,13 @@
   display: grid;
   gap: 1.5em;
   margin: 0 auto;
-  width: min(100%, 900px);
+  width: min(100%, 400px);
 }
-@media (min-width: 922px) {
+@media (min-width: 700px) {
   .project-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: min(900px, 100%);
+    gap: 0;
   }
 }
 
