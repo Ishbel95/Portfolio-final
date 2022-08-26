@@ -1,14 +1,16 @@
 .project-grid {
   display: grid;
   gap: 1.5em;
-  margin: 0 auto;
+  margin: 2em auto 0;
   width: min(100%, 400px);
 }
-@media (min-width: 700px) {
+@media (min-width: 1300px) {
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
-    width: min(900px, 100%);
-    gap: 0;
+    width: 90%;
+  }
+  .card-container {
+    height: 60vh;
   }
 }
 
