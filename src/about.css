@@ -1,3 +1,18 @@
+.sub-heading {
+  margin-top: 2em;
+  font-size: 4rem;
+
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .dropdown-container {
   width: min(90%, 600px);
   display: block;
@@ -5,33 +20,37 @@
 }
 .dropdown-toggle {
   width: 100%;
-  font-size: var(--fs-xs);
+  font-size: 1.5rem;
   border: solid 1px var(--primary-color);
   color: var(--primary-color);
   transition: all 250ms ease-in;
 }
-.dropdown-toggle:hover {
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
 .dropdown-menu {
+  font-size: 1.5rem;
   background-color: #315263;
   border: solid 1px var(--secondary-color);
 }
 
 .dropdown-menu li a {
-  font-size: var(--fs-xs);
   letter-spacing: 0.1em;
   color: var(--third-color);
   transition: all 200ms ease-in;
 }
-.dropdown-menu li a:hover {
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
   background-color: #315263;
   color: var(--primary-color);
 }
 .loading {
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
 }
 .loading span {
   display: inline-block;
@@ -39,7 +58,7 @@
   border-radius: 50%;
   height: 1.5rem;
   width: 1.5rem;
-  margin: 15% 2% 15% 2%;
+  margin: 1em;
   animation: loading 2s linear infinite;
 }
 
@@ -65,43 +84,41 @@
   width: min(90%, 800px);
 }
 
-.about-heading {
+.about-heading,
+.hobby-heading,
+.stack-heading {
+  font-size: 2.8rem !important;
+  animation: flyIn 3s ease-in;
+  text-align: center;
   font-family: var(--secondary-font);
   letter-spacing: 0.1em;
-  font-size: var(--fs-m);
-  text-align: center;
-  padding: 0.6em 0 0.3em 0;
+  padding: 1em 0 0.3em;
+}
+.journey-paragraph,
+.hobby-list {
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  margin: 1em;
   animation: flyIn 3s ease-in;
+}
+.journey-paragraph a {
+  color: var(--primary-color);
+  transition: all 250ms ease-in-out;
+}
+.journey-paragraph a:hover,
+.journey-paragraph a:focus {
+  color: rgb(130, 188, 255);
 }
 
-.journey-paragraph {
-  margin: 1em;
-  font-size: var(--fs-s);
-  animation: flyIn 3s ease-in;
-}
-.hobby-heading {
-  font-size: var(--fs-s);
-  padding-top: 2em;
-  margin: 1em;
-  animation: flyIn 3s ease-in;
-}
-.hobby-list {
-  font-size: var(--fs-s);
-  margin: 1em;
-  animation: flyIn 3s ease-in;
-}
-.hobby-paragraph {
-  margin-top: -4%;
-}
 .stack-container {
   display: grid;
   gap: 1em;
   text-align: center;
-  margin: 1%;
+  margin: 2em;
 }
 .stack-icon {
+  font-size: 2.5rem;
   color: var(--primary-color);
-  font-size: var(--fs-m);
   padding: 0.1em;
   animation: flyIn 3s ease-in;
 }
