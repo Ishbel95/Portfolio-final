@@ -203,7 +203,7 @@ h2 {
 
 @media (min-width: 400px) {
   html {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -219,5 +219,10 @@ h2 {
   }
   .background-gradient {
     min-height: 51vh;
+  }
+}
+@media (min-width: 1300px) {
+  html {
+    font-size: 22px;
   }
 }
