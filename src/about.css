@@ -109,6 +109,9 @@
 .journey-paragraph a:focus {
   color: rgb(130, 188, 255);
 }
+.hobby-list li {
+  margin-bottom: 1em;
+}
 
 .stack-container {
   display: grid;

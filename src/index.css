@@ -146,7 +146,7 @@ h2 {
 .home-main-content a {
   font-family: var(--secondary-font);
   letter-spacing: 0.2em;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -182,7 +182,7 @@ h2 {
 }
 .source-code-container {
   letter-spacing: 0.1em;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--third-color);
   text-align: center;
   font-weight: 300;
@@ -205,15 +205,18 @@ h2 {
   html {
     font-size: 20px;
   }
-}
-
-@media (min-width: 800px) {
   .home-heading {
     font-size: 3rem;
   }
   h2 {
     font-size: 2rem;
   }
+  .home-main-content a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
   .home-image {
     min-height: 50vh;
   }
@@ -224,5 +227,11 @@ h2 {
 @media (min-width: 1300px) {
   html {
     font-size: 22px;
+  }
+  .home-heading {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3rem;
   }
 }

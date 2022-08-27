@@ -5,7 +5,8 @@ function journey(event) {
     <h3 class="text-white about-heading">My Journey</h3>
     <p class="d-block text-white journey-paragraph">
        I've worked as a Special educational needs practioner for many years;
-      working in schools, theatre and even educational recruitment. However, with myself and my partner converting a
+      working in schools, theatre and even educational recruitment.
+       However, with myself and my partner converting a
       Horse lorry into a tiny house, I knew it was time to realise my dreams and find my passion. 
       <br /> 
       <br />
@@ -14,13 +15,19 @@ function journey(event) {
       <br /> 
       <br />
       All I could think was: <strong>'Finally! I've found my passion"</strong>
-      I begun my journey into Front end development exploring Freecodecamp and Code institute. I have recently graduated from 
-      <a href="https://www.shecodes.io/graduates/49145-ishbel-fahey-theaker">SheCodes</a> and am currently nearing completion of <a href="https://scrimba.com/dashboard#overview">Scrimba's Frontend career Path.</a> 
+      I begun my journey into Front end development exploring Freecodecamp and Code institute. 
+      I have recently graduated from 
+      <a href="https://www.shecodes.io/graduates/49145-ishbel-fahey-theaker" 
+      title="Ishbel SheCodes certifications"
+      target="_blank">SheCodes</a> and am currently nearing completion of 
+      <a href="https://scrimba.com/dashboard#overview" 
+      target="_blank" title="Scrimba Homepage">Scrimba's Frontend career Path.</a> 
       <br /> 
       <br />
       I am an extremely creative, logical and intuitive person; Frontend development marries these qualities 
-      together perfectly. Learning to code has changed my life, I have found my <strong>passion</strong>, my <strong>creativity<strong> 
-      ,  <a href="https://github.com/Ishbel95">my code.</a>
+      together perfectly. Learning to code has changed my life, 
+      I have found my <strong>passion</strong>, my <strong>creativity<strong> 
+      ,  <a href="https://github.com/Ishbel95" target="_blank" title="Ishbel Github">my code.</a>
     </p>
   </div>`;
 }
@@ -31,15 +38,18 @@ function hobby(event) {
   document.querySelector("#about-category").innerHTML = ` <div id="hobbies">
     <h3 class="text-white about-heading">My Hobbies</h3>
     <ul class="text-white hobby-list">
-      <li>Practice Yoga</li>
-      <li>Make clothes</li>
-      <li>Write poetry</li>
+      <li>I love to exercise, my favourite types being; running, yoga and swimming...</li>
+  
+      <li>I taught myself how to make clothes a few years back, 
+      I love to experiement with bright colours, sequins and spray paint!</li>
+      <li>The written word has always provided great comfort to me. I write 
+      poetry often and have be known to come up with a song or two.</li>
       <li>
-        Experiment with Make-up
+        Make-up is also one of my favourite past times. I tend to go bold and bright!
       </li>
-      <li>Listen to music</li>
-      <li>Tiny home conversion</li>
-      <li>Play Ukulele</li>
+      <li>I love to listen to music and occasionally give my favourite songs a go on my Ukulele.</li>
+      <li>Me and my partner are converting a Horsebox into a tiny home! So contruction and DIY is another hobby I guess?!</li>
+      
     </ul>
   </div>`;
 }
