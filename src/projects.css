@@ -52,6 +52,12 @@
   align-items: center;
   text-align: center;
 }
+.card-back h4,
+.card-back p,
+.project-icon {
+  color: var(--primary-color);
+  text-shadow: 0 0 0.5px var(--secondary-color);
+}
 .card-back h4 {
   font-family: var(--secondary-font);
   font-size: 2rem;
@@ -60,13 +66,11 @@
   text-underline-offset: 8%;
   padding: 0.5em 0 0;
   margin: 0 1em;
-  color: var(--primary-color);
 }
 .card-back p {
-  color: var(--primary-color);
-
+  line-height: 1em;
   border-radius: 1%;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 0.5em;
 }
 
@@ -74,7 +78,6 @@
   justify-items: center;
   margin: 0.3em;
   font-size: 1.2rem;
-  color: var(--primary-color);
 }
 .project-button {
   color: var(--primary-color);

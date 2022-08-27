@@ -14,14 +14,14 @@ function journey(event) {
       the wonderous world of code...</strong>
       <br /> 
       <br />
-      All I could think was: <strong>'Finally! I've found my passion"</strong>
+      All I could think was: <strong>'Finally, I've found my calling!"</strong>
       I begun my journey into Front end development exploring Freecodecamp and Code institute. 
       I have recently graduated from 
       <a href="https://www.shecodes.io/graduates/49145-ishbel-fahey-theaker" 
       title="Ishbel SheCodes certifications"
       target="_blank">SheCodes</a> and am currently nearing completion of 
       <a href="https://scrimba.com/dashboard#overview" 
-      target="_blank" title="Scrimba Homepage">Scrimba's Frontend career Path.</a> 
+      target="_blank" title="Scrimba Homepage">Scrimba's Frontend Developer career Path.</a> 
       <br /> 
       <br />
       I am an extremely creative, logical and intuitive person; Frontend development marries these qualities 
