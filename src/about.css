@@ -1,3 +1,5 @@
+/* subheading for about, projects and contact */
+
 .sub-heading {
   margin-top: 1.5em;
   font-size: 4rem;
@@ -5,7 +7,7 @@
   text-align: center;
   color: var(--primary-color);
 }
-
+/* layout*/
 .about-container {
   display: flex;
   flex-direction: column;
@@ -125,6 +127,7 @@
   padding: 0.1em;
   animation: flyIn 3s ease-in;
 }
+/* media queries */
 @media (min-width: 60em) {
   .stack-container {
     grid-template-columns: repeat(3, 1fr);
