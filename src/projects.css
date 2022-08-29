@@ -65,7 +65,7 @@
 }
 .card-back h4 {
   font-family: var(--secondary-font);
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 8%;
@@ -75,7 +75,7 @@
 .card-back p {
   line-height: 1em;
   border-radius: 1%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0.5em;
   font-weight: 900;
 }
@@ -83,7 +83,7 @@
 .project-icon {
   justify-items: center;
   margin: 0.3em;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .project-button {
   color: var(--primary-color);
