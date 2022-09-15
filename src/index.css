@@ -12,7 +12,7 @@ img {
 
 :root {
   --primary-color: rgb(255, 255, 255);
-  --secondary-color: rgb(27, 45, 54);
+  --secondary-color: #1b2d36;
   --third-color: #c6cfd3;
   --third-color-opacity: rgba(153, 185, 201, 0.151);
   --primary-font: "Amatic SC", cursive;
@@ -135,27 +135,96 @@ h2 {
   z-index: 3;
 }
 
-.home-main-content-container {
+.home-main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 1em 7em;
-}
-.home-main-content a,
-.home-main-content a {
-  font-family: var(--secondary-font);
-  letter-spacing: 0.2em;
-  font-size: 1.5rem;
-  text-decoration: none;
   color: var(--primary-color);
+  text-align: right;
 }
 
-.home-main-content {
+section {
+  padding: 2em;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(200, 26%, 35%, 1) 7%,
+    hsla(200, 34%, 29%, 1) 100%
+  );
+}
+.home-main-content-inverse {
+  color: var(--secondary-color);
+  text-align: left;
+  background: linear-gradient(
+    180deg,
+    hsla(200, 34%, 29%, 1) 0%,
+    hsla(210, 6%, 93%, 1) 7%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+}
+.home-main-content :nth-child() {
+  background: linear-gradient(
+    180deg,
+    hsla(200, 34%, 29%, 1) 0%,
+    hsla(210, 6%, 93%, 1) 7%,
+    hsla(0, 0%, 100%, 1) 50%,
+    hsla(200, 7%, 92%, 1) 93%,
+    hsla(200, 34%, 29%, 1) 100%
+  );
+}
+
+.home-main-content-header {
+  font-family: var(--secondary-font);
+  margin: 1em;
+  font-size: 2rem;
+  position: relative;
+}
+.home-main-content-header::before {
+  position: absolute;
+  content: "";
+  height: 0.1rem;
+  width: 40%;
+  bottom: 0;
+  left: 58%;
+  background-color: var(--primary-color);
+}
+.home-main-content-inverse .home-main-content-header::before {
+  position: absolute;
+  content: "";
+  height: 0.1rem;
+  width: 40%;
+  bottom: 0;
+  left: 2%;
+  background-color: var(--background-color);
+}
+.home-main-certificate-container {
+  width: 70%;
   margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 1em;
-  padding: 1em 0;
+}
+.home-main-certificate-container img {
+  margin: 1em auto;
+}
+@media (min-width: 700px) {
+  .home-main-certificate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    width: min(80%, 700px);
+    margin: 0 auto;
+  }
+  .home-main-certificate-container img {
+    margin: 0;
+  }
+}
+/* .project-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+} */
+
+.home-main-carousel-image {
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
 }
 
 /* footer */
