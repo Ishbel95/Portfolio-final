@@ -31,10 +31,11 @@ body {
 .home-headings-container {
   display: flex;
   flex-direction: column;
-  margin: -10em 1em 0;
+  margin: -5em 1em 2em;
   text-align: left;
 }
 .home-heading {
+  margin: 0 auto;
   font-weight: 300;
   font-size: 2rem;
   z-index: 2;
@@ -44,25 +45,35 @@ body {
   color: var(--primary-color);
   position: relative;
   animation: flyIn 3s ease-in;
-  text-shadow: 0px 0px 5px #1b2d36;
+  text-shadow: inset 30px 30px 5px #1b2d36;
 }
 .home-headings-container span {
   font-size: 1rem;
   font-family: var(--primary-font);
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.5rem;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
-  margin: -1em 0 0;
+  margin: 1em auto;
   opacity: 0.8;
 }
-h2 {
+.home-main-content-header-primary {
   z-index: 2;
-  color: var(--primary-color);
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
   animation: flyIn 3s ease-in;
   text-align: center;
 }
 
+.home-main-content-header-secondary {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  position: relative;
+  display: block;
+  margin: 0 0 1em;
+  text-align: center;
+  color: var(--primary-color);
+  animation: flyIn 3s ease-in;
+}
 /* navbar */
 .navbar-brand,
 .nav-link {
@@ -113,6 +124,24 @@ h2 {
   }
 }
 /* layout */
+/* .avatar {
+  max-width: 50vh;
+  border-radius: 5px;
+  margin: 0 auto;
+} */
+main {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3em 0;
+  background: #dce5eb;
+  /* background: linear-gradient(
+    180deg,
+    rgba(49, 82, 99, 0) 0%,
+    rgba(255, 255, 255) 2%,
+    rgba(255, 255, 255) 98%,
+    rgba(49, 82, 99, 0) 100%
+  ); */
+}
 
 .home-image {
   background: linear-gradient(to top, #315263 6%, #3152634d 40%, #31526300 100%),
@@ -127,7 +156,7 @@ h2 {
 
 .home-main-content {
   color: var(--primary-color);
-  padding: 1em;
+
   margin: 2em auto;
   width: min(95%, 0.5fr);
   background: radial-gradient(
@@ -142,80 +171,49 @@ h2 {
   padding: 4em 2em;
   border-radius: 5px;
   box-shadow: inset 5px 5px 5px #1b2d36;
-  width: min(90%, 90vw);
-}
-.active,
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
-  text-align: center;
-}
-.home-main-content-header-primary {
-  margin: 2em;
+  width: min(90%, 75vw);
 }
 
-.home-main-content-header-secondary {
-  font-family: var(--secondary-font);
-  font-size: 2.5rem;
-  position: relative;
-  display: block;
-  margin-left: 0.1em;
-  text-align: center;
-  color: var(--primary-color);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  animation: flyIn 3s ease-in;
 }
-/* .home-main-content-header-secondary::before {
-  position: absolute;
-  content: "";
-  height: 0.05em;
-  width: 30%;
-  bottom: 0;
-  opacity: 0.5;
-  background-color: var(--primary-color);
-} */
-.carousel-item img {
+
+.grid img {
   height: 15vh;
-  width: 15vh;
+  width: 30vw;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   background: var(--primary-color);
-  padding: 0.3em;
-  margin: 0.5em;
+  padding: 0.1em;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1b2d36;
+  animation: flyIn 3s ease-in;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: transform 200ms ease-in-out;
 }
-.home-main-content img {
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px #1b2d36;
+.grid img:hover,
+.grid img:focus {
+  transform: scale(1.5);
+  opacity: 1;
+  z-index: 1;
+
+  cursor: pointer;
 }
 
 @media (min-width: 700px) {
-  .home-content-main {
+  .grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  .home-main-carousel-image {
+  .grid img {
     height: 30vh;
-    width: 30vh;
   }
 }
-
-/* .carousel {
-  margin: 1em auto;
-  width: min(100%, 1500px);
-  text-align: center;
-  padding: 4em 2em;
-  border-radius: 5px;
-  background: radial-gradient(
-      circle,
-      rgba(49, 82, 99, 0) 29%,
-      rgba(49, 82, 99, 1) 87%
-    ),
-    url(/images/starBackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: inset 5px 5px 5px #1b2d36;
-} */
 
 /* footer */
 .icon-container {
