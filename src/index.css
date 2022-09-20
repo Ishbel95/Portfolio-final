@@ -48,9 +48,9 @@ body {
   text-shadow: inset 30px 30px 5px #1b2d36;
 }
 .home-headings-container span {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: var(--primary-font);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.5em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
   margin: 1em auto;
@@ -129,11 +129,11 @@ body {
   border-radius: 5px;
   margin: 0 auto;
 } */
-main {
+.home-main {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 3em 0;
-  background: #dce5eb;
+  background: #3c6174;
   /* background: linear-gradient(
     180deg,
     rgba(49, 82, 99, 0) 0%,
@@ -218,6 +218,7 @@ main {
 /* footer */
 .icon-container {
   justify-content: center;
+  margin: 2em;
 }
 
 .social-icon i {
@@ -238,8 +239,9 @@ main {
   background-color: var(--primary-color);
 }
 .source-code-container {
+  margin-bottom: 1em;
   letter-spacing: 0.1em;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--third-color);
   text-align: center;
   font-weight: 300;
@@ -265,31 +267,23 @@ main {
   .home-heading {
     font-size: 3rem;
   }
-  h2 {
-    font-size: 2rem;
-  }
+
   .home-main-content a {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 800px) {
-  .home-image {
-    min-height: 50vh;
-  }
-  .background-gradient {
-    min-height: 51vh;
+  html {
+    font-size: 22px;
   }
 }
 @media (min-width: 1300px) {
   html {
-    font-size: 22px;
+    font-size: 26px;
   }
   .home-heading {
     font-size: 5rem;
-  }
-  h2 {
-    font-size: 3rem;
   }
 }
 /* animation */
