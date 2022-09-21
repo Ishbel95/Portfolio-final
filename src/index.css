@@ -53,7 +53,8 @@ body {
   letter-spacing: 0.5em;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
-  margin: 1em auto;
+  text-align: center;
+  padding: 1em 0;
   opacity: 0.8;
   text-shadow: 0 0 2px #1b2d36;
 }
@@ -68,10 +69,10 @@ body {
 
 .home-main-content-header-secondary {
   font-family: var(--secondary-font);
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   position: relative;
   display: block;
-  margin-bottom: 1em;
+  margin: 0.4em 0 0.5em;
   text-align: center;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
@@ -155,6 +156,8 @@ body {
 
 .home-main-content {
   color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
 
   margin: 2em auto;
   width: min(95%, 0.5fr);
@@ -167,29 +170,67 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 4em 2em;
+  padding: 1em;
   border-radius: 5px;
   box-shadow: inset 5px 5px 5px #1b2d36;
   width: min(90%, 75vw);
 }
 
+.home-main-content-certificate-slider {
+  margin: 1em auto;
+  padding: 3.5em 5em;
+  outline: solid var(--primary-color) 1px;
+  outline-offset: 15px;
+  background-image: url(/images/sheCodesBasics.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: sliderSecondary 20s infinite alternate ease-in-out;
+  box-shadow: 5px 5px 5px #20353f;
+}
+
+@keyframes sliderSecondary {
+  0% {
+    background-image: url(/images/sheCodesBasics.png);
+    background-size: cover;
+  }
+  25% {
+    background-image: url(/images/sheCodesPro.png);
+    background-size: cover;
+  }
+  50% {
+    background-image: url(/images/sheCodesResponsive.png);
+    background-size: cover;
+  }
+  75% {
+    background-image: url(/images/sheCodesReact.png);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(/images/sheCodesBasics.png);
+    background-size: cover;
+  }
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  gap: 1em;
+  gap: 2em;
   justify-content: center;
   align-items: center;
   animation: flyIn 3s ease-in;
+  padding: 1em;
 }
 
 .grid img {
   height: 15vh;
   width: 30vw;
+  outline: solid var(--primary-color) 1px;
+  outline-offset: 5px;
   object-fit: cover;
   object-position: top;
   background: var(--primary-color);
   padding: 0.1em;
-  border-radius: 5px;
+
   box-shadow: 5px 5px 10px #1b2d36;
   animation: flyIn 3s ease-in;
   overflow: hidden;
@@ -198,7 +239,7 @@ body {
 }
 .grid img:hover,
 .grid img:focus {
-  transform: scale(1.5);
+  transform: scale(1.1);
   opacity: 1;
   z-index: 1;
 
