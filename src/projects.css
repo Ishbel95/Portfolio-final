@@ -120,6 +120,7 @@ body {
 }
 
 /* media queries */
+
 @media (min-width: 1300px) {
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
