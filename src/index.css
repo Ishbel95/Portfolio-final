@@ -45,7 +45,7 @@ body {
   color: var(--primary-color);
   position: relative;
   animation: flyIn 3s ease-in;
-  text-shadow: inset 30px 30px 5px #1b2d36;
+  text-shadow: 0 0 2px #1b2d36;
 }
 .home-headings-container span {
   font-size: 1.5rem;
@@ -55,6 +55,7 @@ body {
   animation: flyIn 3s ease-in;
   margin: 1em auto;
   opacity: 0.8;
+  text-shadow: 0 0 2px #1b2d36;
 }
 .home-main-content-header-primary {
   z-index: 2;
@@ -62,22 +63,32 @@ body {
   font-size: 2rem;
   animation: flyIn 3s ease-in;
   text-align: center;
+  text-shadow: 0 0 2px #1b2d36;
 }
 
 .home-main-content-header-secondary {
   font-family: var(--secondary-font);
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
   display: block;
-  margin: 0 0 1em;
+  margin-bottom: 1em;
   text-align: center;
   color: var(--primary-color);
   animation: flyIn 3s ease-in;
+  text-shadow: 0 0 2px #1b2d36;
 }
 /* navbar */
 .navbar-brand,
 .nav-link {
   font-size: 1.2rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary-color) !important;
 }
 .navigation {
   font-size: 1rem;
@@ -96,7 +107,7 @@ body {
 }
 .active-link {
   text-decoration: underline;
-  text-underline-offset: 16px;
+  text-underline-offset: 22px;
   color: var(--primary-color);
 }
 @media (min-width: 992px) {
@@ -123,24 +134,12 @@ body {
     transform-origin: left;
   }
 }
-/* layout */
-/* .avatar {
-  max-width: 50vh;
-  border-radius: 5px;
-  margin: 0 auto;
-} */
+
 .home-main {
   background: var(--primary-color);
   color: var(--primary-color);
   padding: 3em 0;
-  background: #3c6174;
-  /* background: linear-gradient(
-    180deg,
-    rgba(49, 82, 99, 0) 0%,
-    rgba(255, 255, 255) 2%,
-    rgba(255, 255, 255) 98%,
-    rgba(49, 82, 99, 0) 100%
-  ); */
+  background: #3c617498;
 }
 
 .home-image {
@@ -218,7 +217,7 @@ body {
 /* footer */
 .icon-container {
   justify-content: center;
-  margin: 2em;
+  margin: 2em 0 0.5em;
 }
 
 .social-icon i {
@@ -241,15 +240,14 @@ body {
 .source-code-container {
   margin-bottom: 1em;
   letter-spacing: 0.1em;
-  font-size: 1.3rem;
-  color: var(--third-color);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.438);
   text-align: center;
   font-weight: 300;
-  padding: 1%;
 }
 .source-code-container a {
   text-decoration: none;
-  color: var(--third-color);
+  color: rgba(255, 255, 255, 0.438);
   transition: all 200ms ease-in-out;
 }
 .source-code-container a:hover,

@@ -20,7 +20,7 @@
   font-size: 100%;
   letter-spacing: 0.1em;
   display: block;
-  width: 100%;
+  width: 90%;
   transition: all 250ms ease-in;
 }
 
@@ -28,6 +28,6 @@
 .form-button:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  box-shadow: 7px 7px 10px #20353f;
+  box-shadow: inset 5px 5px 5px #20353f;
   border: none;
 }

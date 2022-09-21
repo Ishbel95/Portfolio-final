@@ -6,6 +6,7 @@
   animation: flyIn 3s ease-in;
   text-align: center;
   color: var(--primary-color);
+  text-shadow: 0 0 2px #1b2d36;
 }
 /* layout*/
 .about-container {
@@ -32,7 +33,7 @@
 .dropdown-toggle:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  box-shadow: 7px 7px 10px #20353f;
+  box-shadow: inset 7px 7px 10px #20353f;
   border: none;
 }
 .dropdown-menu {
