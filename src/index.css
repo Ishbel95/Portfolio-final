@@ -17,7 +17,7 @@ strong {
   --primary-color: rgb(255, 255, 255);
   --secondary-color: #1b2d36;
   --third-color: #748a96;
-  --third-color-opacity: rgba(153, 185, 201, 0.151);
+  --third-color-opacity: rgba(255, 255, 255, 0.438);
   --primary-font: "Amatic SC", cursive;
   --secondary-font: "Sue Ellen Francisco", cursive;
   --background-color: #315263;
@@ -48,7 +48,7 @@ body {
   letter-spacing: 0.1em;
 }
 .navigation-secondary {
-  background: var(--third-color-opacity) !important;
+  background: #6698ae65 !important;
   font-weight: 400;
   letter-spacing: 0.1em;
 }
