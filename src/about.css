@@ -3,7 +3,7 @@
 .sub-heading {
   margin-top: 1.5em;
   font-size: 5rem;
-
+  animation: flyIn 3s ease-in;
   text-align: center;
   color: var(--primary-color);
 }
@@ -26,16 +26,20 @@
   border: solid 1px var(--primary-color);
   color: var(--primary-color);
   transition: all 250ms ease-in;
+  box-shadow: 5px 5px 5px #20353f;
 }
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  box-shadow: 7px 7px 10px #20353f;
+  border: none;
 }
 .dropdown-menu {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #315263;
   border: solid 1px var(--secondary-color);
+  box-shadow: 5px 5px 5px #20353f;
 }
 
 .dropdown-menu li a {
@@ -84,6 +88,7 @@
   border: solid 1px var(--primary-color);
   border-radius: 2%;
   width: min(90%, 800px);
+  box-shadow: 5px 5px 5px #20353f;
 }
 
 .about-heading,
