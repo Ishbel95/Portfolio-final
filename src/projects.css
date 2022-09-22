@@ -99,7 +99,7 @@ body {
   grid-area: icon;
   opacity: 0.8;
   margin: 0.3em 1em;
-  font-size: 100%;
+  font-size: 90%;
 }
 .project-button {
   color: var(--primary-color);
