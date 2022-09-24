@@ -23,7 +23,7 @@ body {
 .card-container {
   display: flex;
   position: relative;
-  min-height: 55vh;
+  min-height: 65vh;
 }
 
 .card-container img {
@@ -81,7 +81,7 @@ body {
 .card-back h4 {
   grid-area: header;
   font-family: var(--secondary-font);
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 8%;
@@ -90,7 +90,7 @@ body {
 .card-back p {
   grid-area: content;
   line-height: 1em;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin-top: 2em;
 }
@@ -99,7 +99,7 @@ body {
   grid-area: icon;
   opacity: 0.8;
   margin: 0.3em 1em;
-  font-size: 90%;
+  font-size: 100%;
 }
 .project-button {
   color: var(--primary-color);
