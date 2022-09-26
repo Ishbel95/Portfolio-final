@@ -1,17 +1,4 @@
-/* layout */
-body {
-  background: linear-gradient(
-      to top,
-      #315263 30%,
-      #3152634d 70%,
-      #31526300 100%
-    ),
-    url(/images/starBackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+/* project layout */
 .project-grid {
   display: grid;
   gap: 2em;

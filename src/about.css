@@ -8,7 +8,20 @@
   color: var(--primary-color);
   text-shadow: 0 0 2px #1b2d36;
 }
-/* layout*/
+/* background for about, projects and contact */
+.secondary-body {
+  background: linear-gradient(
+      to top,
+      #315263 30%,
+      #3152634d 70%,
+      #31526300 100%
+    ),
+    url(/images/starBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* about layout*/
 .about-container {
   display: flex;
   flex-direction: column;
