@@ -98,15 +98,14 @@ body {
 }
 .home-heading {
   margin: 0 auto;
-  font-size: 1.6rem;
+  font-size: 2rem;
   z-index: 2;
   line-height: 1.5em;
   font-family: var(--secondary-font);
   letter-spacing: 0.15em;
 }
 .home-headings-container span {
-  font-size: 1rem;
-
+  font-size: 1.2rem;
   letter-spacing: 0.5em;
   padding: 1em 0;
   opacity: 0.7;
@@ -114,21 +113,16 @@ body {
 .home-main-content-header-primary {
   z-index: 2;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
   opacity: 0.9;
-}
-
-.home-main-content-header-secondary {
-  font-family: var(--secondary-font);
-  font-size: 2rem;
-  margin: 0.4em 0 0.5em;
+  margin-bottom: 0;
 }
 
 /* home layout */
 .home-main {
   background: var(--primary-color);
-
-  padding: 1em 0;
+  padding: 2em 0;
   background: #3c617498;
 }
 
@@ -158,17 +152,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 1em 1em 3em;
+
   border-radius: 5px;
   box-shadow: inset 5px 5px 5px #1b2d36;
-  width: min(90%, 75vw);
+  width: min(90%, 1000px);
 }
 
 .home-main-content-certificate-slider {
-  margin: 1em auto;
+  margin: 3em auto;
   padding: 5em 7em;
   outline: solid var(--primary-color) 1px;
-  outline-offset: 15px;
+  outline-offset: 5px;
   background-image: url(/images/sheCodesBasics.png);
   background-size: cover;
   background-position: center;
@@ -206,7 +200,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 1em;
+  padding: 3em;
 }
 
 .grid img {
@@ -230,15 +224,6 @@ body {
   z-index: 1;
 
   cursor: pointer;
-}
-
-@media (min-width: 700px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .grid img {
-    height: 30vh;
-  }
 }
 
 /* footer */
@@ -296,11 +281,16 @@ body {
     font-size: 1.5rem;
   }
   .home-main-content-header-primary {
-    padding: 1em 0;
-    font-size: 2rem;
+    padding: 0.5em 0;
+    font-size: 2.1rem;
   }
-  .home-main-content-header-secondary {
-    font-size: 2rem;
+}
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid img {
+    height: 30vh;
   }
 }
 
